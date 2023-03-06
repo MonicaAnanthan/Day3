@@ -1,0 +1,15 @@
+{
+    "name": "Monica",
+    "mailId": "monicaananthan27@gmail.com",
+    "country": "India",
+    "DOB": "26/09/1996",
+    "isMarried": false,
+    "Domain": "Frontend Developer",
+    "Skills":["HTML5", "Scss", "Javascript"],
+    "Experience": "3+ years",
+    "language":["Tamil", "English"],
+    "address": {
+      "address1": "Bank colony",
+      "address2": "Madurai"
+    }
+  }

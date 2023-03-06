@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json iteration over all for loops</title>
+</head>
+
+<body>
+
+    <script>
+        var resume = {
+            jsonResumeData: [
+                { "name": "Monica" },
+                { "mailId": "monicaananthan27@gmail.com" },
+                { "country": "India" },
+                { "DOB": "26/09/1996" },
+                { "isMarried": false },
+                { "Domain": "Frontend Developer" },
+                { "Skills": ["HTML5", "Scss", "Javascript"] },
+                { "Experience": "3+ years" },
+                { "language": ["Tamil", "English"] },
+                { "address": ["Bank colony", "Madurai"] }
+            ]
+        };
+
+        //For Loop
+        for (var i = 0; i < resume.jsonResumeData.length; i++) {
+            for (var j = 0; j < resume.jsonResumeData[i].length; j++) {
+                console.log(resume.jsonResumeData[i][j])
+            }
+        }
+
+        // For In Loop
+        for (var key in resume.jsonResumeData) {
+            for (var key1 in resume.jsonResumeData[key]) {
+                console.log(key1 + ": " + resume.jsonResumeData[key][key1])
+            }
+        }
+
+        //For Each Loop
+        resume.jsonResumeData.forEach(resumeFunction);
+        function resumeFunction(item){
+             console.log(item)
+        }
+
+        //For Of Loop
+        for(var x of resume.jsonResumeData){
+            console.log(x)
+        }
+
+    </script>
+</body>
+
+</html>
